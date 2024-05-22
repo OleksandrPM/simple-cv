@@ -1,6 +1,3 @@
-# npm packages configuration
-package-lock.json
-
 # Logs
 logs
 *.log
