@@ -1,0 +1,27 @@
+{
+  "tech-skills": [
+    "HTML",
+    "CSS/SCSS",
+    "JavaScript",
+    "React.js",
+    "REST API",
+    "Node.js",
+    "MongoDB",
+    "GIT",
+    "Responsive/Adaptive Design"
+  ],
+  "soft-skills": [
+    "Attentive",
+    "Autonomous",
+    "Critical thinking",
+    "Teamwork",
+    "Creativity",
+    "Stress resistance"
+  ],
+  "languages": [
+    { "language": "English", "level": "intermediate" },
+    { "language": "Czech", "level": "intermediate" },
+    { "language": "Ukrainian", "level": "native" },
+    { "language": "Russian", "level": "fluent" }
+  ]
+}

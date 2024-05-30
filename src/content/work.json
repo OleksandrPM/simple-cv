@@ -1,0 +1,23 @@
+[
+  {
+    "employer": "Škoda Auto s.r.o.",
+    "start-time": "2019",
+    "end-time": "present time",
+    "position": "Production operator",
+    "description": "Performing various operations during the manufacture of cars. The work in tact."
+  },
+  {
+    "employer": "Self-employed",
+    "start-time": "2014",
+    "end-time": "2019",
+    "position": "Private entrepreneur",
+    "description": "Local retail"
+  },
+  {
+    "employer": "The State Emergency Service of Ukraine",
+    "start-time": "2001",
+    "end-time": "2014",
+    "position": "Head of the group of pyrotechnic works",
+    "description": "Organization and direct management of works on disposal of obsolete explosive objectsand the performance of other pyrotechnic works."
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "name": "WebStudio",
+    "links": {
+      "livepage": "https://oleksandrpm.github.io/web-studio-site/",
+      "github": "https://github.com/OleksandrPM/web-studio-site"
+    },
+    "techstack": ["HTML", "SASS", "JS"],
+    "description": "A website of WebStudio company. Responsive design, transform effects, modalwindows.",
+    "role": "developer (individual project)"
+  },
+  {
+    "name": "Ice Cream",
+    "link": {
+      "livepage": "https://oleksandrpm.github.io/ice-cream/",
+      "github": "https://github.com/OleksandrPM/ice-cream"
+    },
+    "techstack": ["HTML", "SASS", "JS", "Parcel"],
+    "description": "A website for ice cream product companies. Adaptive design, animations, modalwindows, and burger menu for ordering.",
+    "role": "Tech Lead, developer of gallery and customs reviews sections, overall composingof the project"
+  },
+  {
+    "name": "Book",
+    "links": {
+      "livepage": "https://mikhailosalko.github.io/JSSF-JavaScript-Special-Forces/",
+      "github": "https://github.com/MikhailoSalko/JSSF-JavaScript-Special-Forces"
+    },
+    "techstack": [
+      "HTML",
+      "SASS",
+      "JS",
+      "Handlebars",
+      "REST API",
+      "AJAX",
+      "Parcel"
+    ],
+    "description": "This project is an online bookstore, where users can browse and purchase books ofvarious genres.",
+    "role": "developer of categories section and dark/light theme switching"
+  },
+  {
+    "name": "Diva",
+    "links": {
+      "livepage": "https://diva-mb.cz/",
+      "github": "https://github.com/OleksandrPM/diva-mb"
+    },
+    "techstack": ["HTML", "SASS", "JS", "Parcel", "Google Drive"],
+    "description": "A landing page of the beauty studio with the possibility of adding/deleting images in thegallery section and an editable advertising block.",
+    "role": "developer, designer (individual project)"
+  },
+  {
+    "name": "Drink Master",
+    "links": {
+      "livepage": "https://ansachuk.github.io/FSSF-DrinkMaster/welcome",
+      "github-frontend": "https://github.com/ansachuk/FSSF-DrinkMaster",
+      "github-backend": "https://github.com/Fdobrovols/drink-master-fssf-backend"
+    },
+    "techstack": [
+      "HTML",
+      "SASS",
+      "JS",
+      "React",
+      "Redux",
+      "Vite",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "description": "A web application, that allows you to find different cocktails, create new, and storefavorite cocktails.",
+    "role": "backend developer (routers, controllers, database)"
+  }
+]
