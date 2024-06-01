@@ -39,7 +39,7 @@ function buildLinkListHTML(links) {
                     class="project-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                  >${links[prop]}
+                    >${links[prop]}
                   </a>
                 </li>`;
   }
