@@ -11,7 +11,7 @@
   },
   {
     "name": "Ice Cream",
-    "link": {
+    "links": {
       "livepage": "https://oleksandrpm.github.io/ice-cream/",
       "github": "https://github.com/OleksandrPM/ice-cream"
     },
