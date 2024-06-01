@@ -1,5 +1,5 @@
 {
-  "tech-skills": [
+  "techSkills": [
     "HTML",
     "CSS/SCSS",
     "JavaScript",
@@ -10,7 +10,7 @@
     "GIT",
     "Responsive/Adaptive Design"
   ],
-  "soft-skills": [
+  "softSkills": [
     "Attentive",
     "Autonomous",
     "Critical thinking",
