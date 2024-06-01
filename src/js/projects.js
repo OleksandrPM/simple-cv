@@ -15,7 +15,7 @@ function buildProjectListHTML(projects) {
 function buildProjectHTML(project) {
   const { name, links, techstack, description, role } = project;
 
-  return `<article class="project">
+  return `<article class="project-article">
             <h3 class="project-name">${name}
               <span class="project-stack">[${techstack.join(", ")}]</span>
             </h3>

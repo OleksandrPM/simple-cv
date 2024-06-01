@@ -13,7 +13,7 @@ function buildWorkListHTML(work) {
 function buildWorkItemHTML(workItem) {
   const { employer, startTime, endTime, position, description } = workItem;
 
-  return `<article class="workItem">
+  return `<article class="work-article">
             <h3 class="work-position">${position}</h3>           
             <p class="work-description">
                 <span class="work-employer">${employer}</span>  |  
