@@ -10,20 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/styles/styles.scss" />
+    <link rel="stylesheet" href="/src/scss/index.scss" />
+    <!-- <link rel="stylesheet" href="/src/scss/styles.css" /> -->
     <title>Moskaliuk CV</title>
   </head>
-  <body>
+  <body class="page">
     <header></header>
     <main>
-      {{> hero}}{{> projects}}{{> work}}{{> education}}{{> contacts}}{{>
+      {{> hero}}{{> projects}}{{> work}}{{> education}} {{> contacts}}{{>
       tech-skills}}{{> soft-skills}}{{> languages}}
     </main>
-    <!--Main-->
-    <div class="main">
-      <!--Main content-->
+    <!-- <div class="main">
       <div class="main_content">
-        <!--about person-->
         <div class="about_person">
           <h2 class="about_person_profession">Front-End Developer</h2>
           <h1 class="about_person_name">Oleksandr Moskaliuk</h1>
@@ -37,7 +35,6 @@
           </div>
         </div>
 
-        <!--Projects-->
         <div class="projects">
           <h3 class="title">Projects</h3>
           <ol class="projects_list">
@@ -72,7 +69,6 @@
           </ol>
         </div>
 
-        <!--Work & Company 1-->
         <div class="work">
           <h3 class="title">Work Experience</h3>
           <h4 class="subtitle">
@@ -108,7 +104,6 @@
             </li>
           </ul>
         </div>
-        <!--Company 2-->
         <div class="work">
           <h4 class="subtitle">
             Manager <span class="color_subtitle">Roga & Kopyta New</span>
@@ -135,7 +130,6 @@
             </li>
           </ul>
         </div>
-        <!--Company 3-->
         <div class="work">
           <h4 class="subtitle">
             Manager <span class="color_subtitle">Roga & Kopyta LLC</span>
@@ -162,7 +156,6 @@
           </ul>
         </div>
 
-        <!--Education-->
         <div class="education">
           <h3 class="title">Education</h3>
           <h4 class="subtitle">
@@ -177,16 +170,13 @@
         </div>
       </div>
 
-      <!--Sidebar-->
       <aside class="sidebar">
-        <!-- persons_photo -->
         <img
           class="persons_photo"
           src="/src/images/black_cat.jpg"
           alt="person photo"
         />
 
-        <!--Contacts-->
         <div class="contacts">
           <div class="sidebar_title">
             <h3>Contacts</h3>
@@ -205,7 +195,6 @@
           </p>
         </div>
 
-        <!--Tech Skills-->
         <div class="tech_skills">
           <div class="sidebar_title">
             <h3>Tech Skills</h3>
@@ -230,7 +219,6 @@
           </ul>
         </div>
 
-        <!--Soft Skills-->
         <div class="soft_skills">
           <div class="sidebar_title">
             <h3>Soft Skills</h3>
@@ -246,9 +234,8 @@
           </ul>
         </div>
       </aside>
-    </div>
-    <footer></footer>
-
+    </div> -->
+    {{> footer}}
     <!-- Scripts -->
     <script type="module" src="/src/js/hero.js"></script>
     <script type="module" src="/src/js/projects.js"></script>
@@ -256,5 +243,6 @@
     <script type="module" src="/src/js/education.js"></script>
     <script type="module" src="/src/js/contacts.js"></script>
     <script type="module" src="/src/js/skills.js"></script>
+    <script type="module" src="/src/js/footer.js"></script>
   </body>
 </html>

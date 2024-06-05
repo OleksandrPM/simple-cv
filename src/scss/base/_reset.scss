@@ -1,0 +1,54 @@
+@import "/node_modules/modern-normalize/modern-normalize.css";
+
+p {
+  margin: 0;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  display: inline-flex;
+  margin: 0;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button,
+input,
+textarea {
+  cursor: pointer;
+}

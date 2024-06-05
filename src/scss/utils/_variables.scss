@@ -1,0 +1,42 @@
+@use "sass:math";
+
+// Breakpoints
+$mobile-width: 320px;
+$big-mobile-widdth: 480px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+// Viewwidth coefficients
+$vw-mobile-coef: math.div(3.2px, 1vw);
+$vw-big-mobile-coef: math.div(4.8px, 1vw);
+$vw-tablet-coef: math.div(7.68px, 1vw);
+$vw-desktop-coef: math.div(14.4px, 1vw);
+
+// Fonts
+@font-face {
+  font-family: "Lato-bold";
+  src: url("/src/fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lato-regular";
+  src: url("/src/fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Garet-bold";
+  src: url("/src/fonts/Garet/Garet-Heavy.ttf");
+}
+
+$hero-title-font: "Lato-bold", sans-serif;
+$regular-font: "Lato-normal", sans-serif;
+$title-font:"Garet-bold", sans-serif;
+
+// Colors
+$main-title-color: #323b4c;
+$reverse-title-color: #ffffff;
+$main-text-color: #737373;
+$reverse-text-color: #ffffff;
+$main-background-color: #ffffff;
+$secondary-background-color: #323b4c;
+$accent-color: #fb6d3a;

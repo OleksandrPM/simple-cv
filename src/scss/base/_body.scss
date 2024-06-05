@@ -1,0 +1,49 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+
+  scroll-behavior: smooth;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    auto calc(40px / $vw-mobile-coef) auto calc(40px / $vw-mobile-coef)
+    auto calc(40px / $vw-mobile-coef) auto calc(40px / $vw-mobile-coef)
+    auto calc(40px / $vw-mobile-coef) auto calc(40px / $vw-mobile-coef)
+    auto calc(40px / $vw-mobile-coef) auto;
+}
+
+.hero {
+  grid-row: 1/2;
+}
+
+.projects {
+  grid-row: 3/4;
+}
+
+.work {
+  grid-row: 5/6;
+}
+
+.education {
+  grid-row: 7/8;
+}
+
+.tech-skills {
+  grid-row: 9/10;
+}
+
+.soft-skills {
+  grid-row: 11/12;
+}
+
+.languages {
+  grid-row: 13/14;
+}
+
+.contacts {
+  grid-row: 15/16;
+}

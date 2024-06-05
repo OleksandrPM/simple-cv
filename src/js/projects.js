@@ -33,7 +33,7 @@ function buildLinkListHTML(links) {
 
   for (let prop in links) {
     listHTML += `<li class="project-links_item">
-                  <p class="link-name">${prop}</p>
+                  <p class="link-name">${prop}: </p>
                   <a
                     href="${links[prop]}"
                     class="project-link"
