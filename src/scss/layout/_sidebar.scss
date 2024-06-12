@@ -1,0 +1,13 @@
+.sidebar {
+  display: none;
+
+  color: $reverse-text-color;
+  background-color: $secondary-background-color;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: calc(40px / $vw-desktop-coef);
+    row-gap: calc(40px / $vw-desktop-coef);
+  }
+}

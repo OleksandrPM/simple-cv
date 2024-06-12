@@ -1,49 +1,88 @@
-.page {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-
+html {
   scroll-behavior: smooth;
+
+  background-color: $body-background-color;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  font-family: $regular-font;
+  font-size: calc(16px / $vw-mobile-coef);
+  line-height: 1.4;
+
+  color: $main-text-color;
+  background-color: $main-background-color;
+
+  @media screen and (min-width: $big-mobile-width) {
+    font-size: calc(16px / $vw-big-mobile-coef);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: calc(12px / $vw-tablet-coef);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: calc(1200px / $vw-desktop-coef);
+    margin: calc(32px / $vw-desktop-coef) auto;
+
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  }
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows:
-    auto calc(40px / $vw-mobile-coef) auto calc(40px / $vw-mobile-coef)
-    auto calc(40px / $vw-mobile-coef) auto calc(40px / $vw-mobile-coef)
-    auto calc(40px / $vw-mobile-coef) auto calc(40px / $vw-mobile-coef)
-    auto calc(40px / $vw-mobile-coef) auto;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns:
+      calc(370px / $vw-desktop-coef)
+      calc(88px / $vw-desktop-coef) auto calc(40px / $vw-desktop-coef);
+    grid-template-rows:
+      calc(40px / $vw-desktop-coef)
+      auto calc(40px / $vw-desktop-coef) auto calc(40px / $vw-desktop-coef)
+      auto calc(40px / $vw-desktop-coef) auto calc(40px / $vw-desktop-coef);
+
+    & > .tech-skills,
+    & > .soft-skills,
+    & > .languages,
+    & > .contacts {
+      display: none;
+    }
+  }
+}
+
+.sidebar {
+  grid-column: 1/2;
+  grid-row: 1/10;
 }
 
 .hero {
-  grid-row: 1/2;
+  @media screen and (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
 }
 
 .projects {
-  grid-row: 3/4;
+  @media screen and (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
 }
 
 .work {
-  grid-row: 5/6;
+  @media screen and (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 6/7;
+  }
 }
 
 .education {
-  grid-row: 7/8;
-}
-
-.tech-skills {
-  grid-row: 9/10;
-}
-
-.soft-skills {
-  grid-row: 11/12;
-}
-
-.languages {
-  grid-row: 13/14;
-}
-
-.contacts {
-  grid-row: 15/16;
+  @media screen and (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 8/9;
+  }
 }

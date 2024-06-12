@@ -1,4 +1,6 @@
 .footer {
+  padding: calc(10px / $vw-mobile-coef);
+
   color: $reverse-text-color;
   background-color: $secondary-background-color;
 }

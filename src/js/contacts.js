@@ -1,8 +1,8 @@
 import contacts from "../content/contacts.json";
 
-document
-  .querySelector(".contacts_container")
-  .insertAdjacentHTML("beforeend", buildContactsHTML(contacts));
+document.querySelectorAll(".contacts_container").forEach((el) => {
+  el.insertAdjacentHTML("beforeend", buildContactsHTML(contacts));
+});
 
 function buildContactsHTML(contacts) {
   const { phone, email, github, linkedin, address } = contacts;

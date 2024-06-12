@@ -1,0 +1,21 @@
+.section-title,
+.summary-title {
+  font-family: $title-font;
+  font-size: calc(20px / $vw-mobile-coef);
+  letter-spacing: calc(0.7px / $vw-mobile-coef);
+  text-decoration: underline;
+
+  color: $main-title-color;
+
+  @media screen and (min-width: $big-mobile-width) {
+    font-size: calc(20px / $vw-big-mobile-coef);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: calc(16px / $vw-tablet-coef);
+  }
+}
+
+.sidebar .section-title {
+  color: $reverse-text-color;
+}

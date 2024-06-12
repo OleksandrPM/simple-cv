@@ -1,20 +1,25 @@
-.hero_img-thumb {
+.photo-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-
   width: calc(200px / $vw-mobile-coef);
   height: calc(200px / $vw-mobile-coef);
 
-  border-radius: calc(200px / $vw-mobile-coef);
+  border-radius: 100%;
+
   overflow: hidden;
 
-  @media screen and (min-width: $big-mobile-widdth) {
+  @media screen and (min-width: $big-mobile-width) {
     margin-left: 0;
 
     width: calc(170px / $vw-big-mobile-coef);
     height: calc(170px / $vw-big-mobile-coef);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: calc(290px / $vw-desktop-coef);
+    height: calc(290px / $vw-desktop-coef);
   }
 }

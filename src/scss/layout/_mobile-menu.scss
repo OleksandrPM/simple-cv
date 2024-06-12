@@ -1,0 +1,12 @@
+.mobile-menu {
+  display: none;
+  position: fixed;
+  right: 0;
+
+  color: $reverse-text-color;
+  background-color: rgba($color: $secondary-background-color, $alpha: 0.9);
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}

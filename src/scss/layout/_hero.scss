@@ -1,0 +1,112 @@
+.hero {
+  color: $reverse-text-color;
+  background-color: $secondary-background-color;
+
+  @media screen and (min-width: $tablet-width) {
+    color: $main-text-color;
+    background-color: $main-background-color;
+  }
+}
+
+.hero_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    calc(200px / $vw-mobile-coef) calc(20px / $vw-mobile-coef)
+    auto auto calc(20px / $vw-mobile-coef) auto;
+
+  align-items: center;
+
+  @media screen and (min-width: $big-mobile-width) {
+    display: grid;
+    grid-template-columns:
+      calc(170px / $vw-big-mobile-coef) calc(20px / $vw-big-mobile-coef)
+      auto;
+    grid-template-rows: auto auto calc(20px / $vw-big-mobile-coef) auto;
+    row-gap: 0;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto calc(20px / $vw-desktop-coef) auto;
+  }
+}
+
+.hero_container > .photo-thumb {
+  grid-row: 1/2;
+  @media screen and (min-width: $big-mobile-width) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.hero_qualification {
+  grid-row: 3/4;
+
+  font-size: calc(15px / $vw-mobile-coef);
+  letter-spacing: calc(1.9px / $vw-mobile-coef);
+
+  @media screen and (min-width: $big-mobile-width) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+    font-size: calc(14px / $vw-big-mobile-coef);
+    letter-spacing: calc(0.7px / $vw-big-mobile-coef);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    font-size: calc(16px / $vw-tablet-coef);
+    letter-spacing: calc(2.14px / $vw-tablet-coef);
+
+    color: $main-title-color;
+  }
+}
+
+.hero_title {
+  grid-row: 4/5;
+
+  font-family: $hero-title-font;
+  font-size: calc(26px / $vw-mobile-coef);
+  letter-spacing: calc(0.7px / $vw-mobile-coef);
+
+  @media screen and (min-width: $big-mobile-width) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: self-start;
+
+    font-size: calc(22px / $vw-big-mobile-coef);
+    letter-spacing: normal;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    font-size: calc(26px / $vw-tablet-coef);
+    letter-spacing: calc(0.7px / $vw-tablet-coef);
+
+    color: $main-title-color;
+  }
+}
+
+.hero_summary {
+  grid-row: 6/7;
+
+  @media screen and (min-width: $big-mobile-width) {
+    grid-column: 1/4;
+    grid-row: 4/5;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+}

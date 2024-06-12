@@ -15,10 +15,12 @@
     <title>Moskaliuk CV</title>
   </head>
   <body class="page">
-    <header></header>
     <main>
-      {{> hero}}{{> projects}}{{> work}}{{> education}} {{> contacts}}{{>
-      tech-skills}}{{> soft-skills}}{{> languages}}
+      {{>hero}}{{>projects}}{{>work}}{{>education}}{{>contacts}}
+      {{>tech-skills}}{{>soft-skills}}{{>languages}}
+      <aside class="sidebar">
+        {{>photo}}{{>contacts}}{{>tech-skills}}{{>soft-skills}}{{>languages}}
+      </aside>
     </main>
     <!-- <div class="main">
       <div class="main_content">
@@ -236,6 +238,26 @@
       </aside>
     </div> -->
     {{> footer}}
+
+    <!-- Modal windows -->
+    <div class="mobile-menu">
+      <button class="mobile-menu_button" type="button" title="open menu">
+        Menu
+      </button>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero">Home</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#work">Work</a></li>
+          <li class="nav-item"><a href="#education">Education</a></li>
+          <li class="nav-item"><a href="#contacts">Contacts</a></li>
+          <li class="nav-item"><a href="#tech-skills">Tech-skills</a></li>
+          <li class="nav-item"><a href="#soft-skills">Soft-skills</a></li>
+          <li class="nav-item"><a href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <!-- Scripts -->
     <script type="module" src="/src/js/hero.js"></script>
     <script type="module" src="/src/js/projects.js"></script>
@@ -244,5 +266,6 @@
     <script type="module" src="/src/js/contacts.js"></script>
     <script type="module" src="/src/js/skills.js"></script>
     <script type="module" src="/src/js/footer.js"></script>
+    <script type="module" src="/src/js/photo.js"></script>
   </body>
 </html>

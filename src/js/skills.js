@@ -1,16 +1,16 @@
 import { techSkills, softSkills, languages } from "../content/skills.json";
 
-document
-  .querySelector(".tech-skills_container")
-  .insertAdjacentHTML("beforeend", buildSkillsListHTML(techSkills));
+document.querySelectorAll(".tech-skills_container").forEach((el) => {
+  el.insertAdjacentHTML("beforeend", buildSkillsListHTML(techSkills));
+});
 
-document
-  .querySelector(".soft-skills_container")
-  .insertAdjacentHTML("beforeend", buildSkillsListHTML(softSkills));
+document.querySelectorAll(".soft-skills_container").forEach((el) => {
+  el.insertAdjacentHTML("beforeend", buildSkillsListHTML(softSkills));
+});
 
-document
-  .querySelector(".languages_container")
-  .insertAdjacentHTML("beforeend", buildLanguagesListHTML(languages));
+document.querySelectorAll(".languages_container").forEach((el) => {
+  el.insertAdjacentHTML("beforeend", buildLanguagesListHTML(languages));
+});
 
 function buildSkillsListHTML(skills) {
   return `<ul class="skills-list">${skills
