@@ -18,13 +18,14 @@ function buildProjectHTML(project) {
   return `<article class="project-article">
             <h3 class="project-name">${name}
               <span class="project-stack">[${techstack.join(", ")}]</span>
-            </h3>
-            <h4 >Links:</h4>
-            <ul class="project-links">${buildLinkListHTML(links)}</ul>
+            </h3>                 
             <p class="project-description">${description}</p>
             <p class="project-role">
-              <span class="project-role_title">Role: </span>${role}
+              <span class="emphasis">Role: </span>${role}
             </p>
+            <ul class="project-links"><span class="emphasis">Links:</span>${buildLinkListHTML(
+              links
+            )}</ul>
           </article>`;
 }
 
@@ -33,14 +34,16 @@ function buildLinkListHTML(links) {
 
   for (let prop in links) {
     listHTML += `<li class="project-links_item">
-                  <p class="link-name">${prop}: </p>
-                  <a
+                  <p class="link-name">${prop}: 
+                    <a
                     href="${links[prop]}"
-                    class="project-link"
+                    class="project-link touchable"
                     target="_blank"
                     rel="noopener noreferrer"
                     >${links[prop]}
-                  </a>
+                    </a>
+                  </p>
+                  
                 </li>`;
   }
 

@@ -19,3 +19,9 @@
 .sidebar .section-title {
   color: $reverse-text-color;
 }
+
+.hero .summary-title {
+  @media screen and (max-width: calc($tablet-width - 0.02px)) {
+    color: $reverse-text-color;
+  }
+}

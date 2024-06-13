@@ -1,0 +1,51 @@
+.project-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: calc(5px / $vw-mobile-coef);
+}
+
+.project-name {
+  font-size: calc(16px / $vw-mobile-coef);
+
+  color: $main-title-color;
+
+  @media screen and (min-width: $big-mobile-width) {
+    font-size: calc(16px / $vw-big-mobile-coef);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: calc(12px / $vw-tablet-coef);
+  }
+}
+
+.project-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-links {
+  list-style: disc;
+}
+
+.project-link {
+  color: rgba($color: $accent-color, $alpha: 0.7);
+
+  @media (hover: hover) {
+    &:hover {
+      color: rgba($color: $accent-color, $alpha: 1);
+    }
+  }
+
+  &:focus {
+    color: rgba($color: $accent-color, $alpha: 1);
+    outline-color: $accent-color;
+  }
+
+  &.is-touched {
+    color: rgba($color: $accent-color, $alpha: 1);
+  }
+}
+
+.emphasis {
+  color: $main-title-color;
+}
