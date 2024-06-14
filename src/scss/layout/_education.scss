@@ -1,0 +1,52 @@
+.education-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: calc(8px / $vw-mobile-coef);
+
+  @media screen and (min-width: $tablet-width) {
+    row-gap: calc(8px / $vw-tablet-coef);
+  }
+}
+
+.school-name {
+  font-size: calc(16px / $vw-mobile-coef);
+
+  color: $main-title-color;
+
+  @media screen and (min-width: $big-mobile-width) {
+    font-size: calc(16px / $vw-big-mobile-coef);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: calc(12px / $vw-tablet-coef);
+  }
+}
+
+.education-qualification {
+  display: inline;
+}
+
+.showDiploma-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  filter: grayscale(50%);
+  background-color: inherit;
+  border: none;
+
+  & svg {
+    width: calc(16px / $vw-mobile-coef);
+    height: calc(16px / $vw-mobile-coef);
+
+    @media screen and (min-width: $big-mobile-width) {
+      width: calc(16px / $vw-big-mobile-coef);
+      height: calc(16px / $vw-big-mobile-coef);
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      width: calc(12px / $vw-tablet-coef);
+      height: calc(12px / $vw-tablet-coef);
+    }
+  }
+}

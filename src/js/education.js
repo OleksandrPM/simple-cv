@@ -1,4 +1,5 @@
 import education from "../content/education.json";
+import pdfLogo from "../images/pdf-orig.svg";
 
 const educationListEl = document.querySelector(".education-list");
 
@@ -25,9 +26,13 @@ function buildEducationItemHTML(school) {
 
   return `<article class="education-article">
             <h3 class="school-name">${schoolName}</h3> 
-            <p class="education-period">${startTime} - ${endTime}</p>          
+            <p class="education-period">Period: ${startTime} - ${endTime}</p>          
             <p class="education-qualification">${qualification}</p>   
-            <button class="showDiploma-btn" type="button" data-id="${id}">Show Diploma</button>         
+            <button class="showDiploma-btn" type="button" data-id="${id}" title="open document">
+              <svg>
+                <use href="${pdfLogo + "#pdf"}"></use>
+              </svg>
+            </button>         
           </article>`;
 }
 
