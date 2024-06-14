@@ -23,9 +23,9 @@ function buildProjectHTML(project) {
             <p class="project-role">
               <span class="emphasis">Role: </span>${role}
             </p>
-            <ul class="project-links"><span class="emphasis">Links:</span>${buildLinkListHTML(
-              links
-            )}</ul>
+            <ul class="project-links">
+              ${buildLinkListHTML(links)}
+            </ul>
           </article>`;
 }
 
@@ -34,16 +34,15 @@ function buildLinkListHTML(links) {
 
   for (let prop in links) {
     listHTML += `<li class="project-links_item">
-                  <p class="link-name">${prop}: 
-                    <a
+                  <span class="emphasis">${prop}: </span>
+                  <a
                     href="${links[prop]}"
                     class="project-link touchable"
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="follow the link"
                     >${links[prop]}
-                    </a>
-                  </p>
-                  
+                  </a>                  
                 </li>`;
   }
 

@@ -5,9 +5,16 @@ document.querySelectorAll(".contacts_container").forEach((el) => {
 });
 
 function buildContactsHTML(contacts) {
-  const { phone, email, github, linkedin, address } = contacts;
+  const {
+    phone,
+    email,
+    github,
+    linkedin,
+    address: { city, region, state },
+  } = contacts;
 
-  return `<a 
+  return `<address class="address">
+            <a 
                 href="tel:${phone}" 
                 class="contacts-link contacts-phone"
                 title="Call me"
@@ -35,5 +42,7 @@ function buildContactsHTML(contacts) {
                 title="See my LinkedIn page"
                 >LinkedIn
             </a>
-            <p class="contacts-address">${address}</p>`;
+            <p class="contacts-address">${city}<br/>${region}<br/>${state}</p>
+    </address>
+            `;
 }

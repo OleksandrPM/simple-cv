@@ -39,7 +39,7 @@ main {
     display: grid;
     grid-template-columns:
       calc(370px / $vw-desktop-coef)
-      calc(88px / $vw-desktop-coef) auto calc(40px / $vw-desktop-coef);
+      calc(40px / $vw-desktop-coef) auto calc(40px / $vw-desktop-coef);
     grid-template-rows:
       calc(40px / $vw-desktop-coef)
       auto calc(40px / $vw-desktop-coef) auto calc(40px / $vw-desktop-coef)
