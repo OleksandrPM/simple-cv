@@ -14,11 +14,11 @@ function buildWorkItemHTML(workItem) {
   const { employer, startTime, endTime, position, description } = workItem;
 
   return `<article class="work-article">
-            <h3 class="work-position">${position}</h3>           
-            <p class="work-description">
-                <span class="work-employer">${employer}</span>  |  
-                <span class="work-period">${startTime} - ${endTime}</span><br />
-                <span>${description}</span>
-            </p>            
+            <h3 class="work-position">${position}
+              <span class="non-emphasis"> at </span>
+              <span class="work-employer">${employer}</span>
+            </h3>           
+            <p class="work-period">Period: ${startTime} - ${endTime}</p>
+            <p class="work-description">${description}</p>            
           </article>`;
 }

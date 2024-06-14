@@ -1,7 +1,17 @@
 .project-list {
   display: flex;
   flex-direction: column;
-  row-gap: calc(5px / $vw-mobile-coef);
+  row-gap: calc(8px / $vw-mobile-coef);
+
+  @media screen and (min-width: $tablet-width) {
+    row-gap: calc(8px / $vw-tablet-coef);
+  }
+}
+
+.project-article {
+  & .emphasis {
+    color: $main-title-color;
+  }
 }
 
 .project-name {
@@ -22,12 +32,6 @@
   color: $main-text-color;
 }
 
-// .project-links_item {
-//   & .link-name {
-//     display: inline;
-//   }
-// }
-
 .project-link {
   color: rgba($color: $accent-color, $alpha: 0.7);
 
@@ -45,8 +49,4 @@
   &.is-touched {
     color: rgba($color: $accent-color, $alpha: 1);
   }
-}
-
-.emphasis {
-  color: $main-title-color;
 }

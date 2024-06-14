@@ -1,0 +1,31 @@
+.work-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: calc(8px / $vw-mobile-coef);
+
+  @media screen and (min-width: $tablet-width) {
+    row-gap: calc(8px / $vw-tablet-coef);
+  }
+}
+
+.work-position {
+  font-size: calc(16px / $vw-mobile-coef);
+
+  color: $main-title-color;
+
+  @media screen and (min-width: $big-mobile-width) {
+    font-size: calc(16px / $vw-big-mobile-coef);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: calc(12px / $vw-tablet-coef);
+  }
+
+  & .work-employer {
+    color: $accent-color;
+  }
+
+  & .non-emphasis {
+    color: $main-text-color;
+  }
+}
