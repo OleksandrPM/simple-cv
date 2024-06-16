@@ -1,5 +1,5 @@
 import education from "../content/education.json";
-import pdfLogo from "../images/pdf-orig.svg";
+import sprite from "../images/sprite.svg";
 
 const educationListEl = document.querySelector(".education-list");
 
@@ -30,7 +30,7 @@ function buildEducationItemHTML(school) {
             <p class="education-qualification">${qualification}</p>   
             <button class="showDiploma-btn touchable" type="button" data-id="${id}" title="open document">
               <svg>
-                <use href="${pdfLogo + "#pdf"}"></use>
+                <use href="${sprite + "#icon-pdf"}"></use>
               </svg>
             </button>         
           </article>`;
