@@ -35,6 +35,10 @@
 .project-link {
   color: rgba($color: $accent-color, $alpha: 0.7);
 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color;
+
   @media (hover: hover) {
     &:hover {
       color: rgba($color: $accent-color, $alpha: 1);

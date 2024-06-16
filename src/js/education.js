@@ -28,7 +28,7 @@ function buildEducationItemHTML(school) {
             <h3 class="school-name">${schoolName}</h3> 
             <p class="education-period">Period: ${startTime} - ${endTime}</p>          
             <p class="education-qualification">${qualification}</p>   
-            <button class="showDiploma-btn" type="button" data-id="${id}" title="open document">
+            <button class="showDiploma-btn touchable" type="button" data-id="${id}" title="open document">
               <svg>
                 <use href="${pdfLogo + "#pdf"}"></use>
               </svg>

@@ -32,8 +32,30 @@
   justify-content: center;
 
   filter: grayscale(50%);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: filter transform;
+
   background-color: inherit;
   border: none;
+
+  @media (hover: hover) {
+    &:hover {
+      filter: grayscale(0);
+      transform: scale(1.2);
+    }
+  }
+
+  &:focus {
+    filter: grayscale(0);
+    transform: scale(1.2);
+    outline-color: $accent-color;
+  }
+
+  &.is-touched {
+    filter: grayscale(0);
+    transform: scale(1.2);
+  }
 
   & svg {
     width: calc(16px / $vw-mobile-coef);
