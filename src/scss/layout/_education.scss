@@ -61,6 +61,8 @@
     width: calc(16px / $vw-mobile-coef);
     height: calc(16px / $vw-mobile-coef);
 
+    pointer-events: none;
+
     @media screen and (min-width: $big-mobile-width) {
       width: calc(16px / $vw-big-mobile-coef);
       height: calc(16px / $vw-big-mobile-coef);
