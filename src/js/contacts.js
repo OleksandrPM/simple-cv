@@ -63,7 +63,7 @@ function buildContactsHTML(contacts) {
               <svg>
                 <use href="${sprite + "#home"}"></use>
               </svg>
-              ${city}<br/>${region}<br/>${state}
+              ${city},<br/>${region},<br/>${state}
             </p>
     </address>
             `;

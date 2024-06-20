@@ -1,0 +1,48 @@
+.skills-list.marked-list {
+  padding-left: calc(16px / $vw-mobile-coef);
+
+  list-style: disc;
+
+  @media screen and (min-width: $big-mobile-width) {
+    padding-left: calc(16px / $vw-big-mobile-coef);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    padding-left: calc(12px / $vw-tablet-coef);
+  }
+
+  & li::marker {
+    color: $accent-color;
+  }
+
+  & p {
+    display: inline;
+  }
+}
+
+.skills-list.languages {
+  & li {
+    display: flex;
+    align-items: center;
+  }
+
+  & svg {
+    margin-right: calc(8px / $vw-mobile-coef);
+    width: calc(16px / $vw-mobile-coef);
+    height: calc(12px / $vw-mobile-coef);
+
+    border: 0.01rem solid;
+
+    @media screen and (min-width: $big-mobile-width) {
+      margin-right: calc(8px / $vw-big-mobile-coef);
+      width: calc(16px / $vw-big-mobile-coef);
+      height: calc(12px / $vw-big-mobile-coef);
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      margin-right: calc(8px / $vw-tablet-coef);
+      width: calc(12px / $vw-tablet-coef);
+      height: calc(9px / $vw-tablet-coef);
+    }
+  }
+}

@@ -5,14 +5,11 @@ p {
 }
 
 img,
-picture {
+picture,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-svg {
-  display: block;
 }
 
 h1,
@@ -30,10 +27,6 @@ ul {
   padding: 0;
 
   list-style: none;
-}
-
-li {
-  list-style-position: inside;
 }
 
 a {

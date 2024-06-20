@@ -19,9 +19,9 @@
     "Stress resistance"
   ],
   "languages": [
-    { "language": "English", "level": "intermediate" },
-    { "language": "Czech", "level": "intermediate" },
-    { "language": "Ukrainian", "level": "native" },
-    { "language": "ruZZian", "level": "fluent" }
+    { "id": "flag-gb", "language": "English", "level": "intermediate" },
+    { "id": "flag-cz", "language": "Czech", "level": "intermediate" },
+    { "id": "flag-ua", "language": "Ukrainian", "level": "native" },
+    { "id": "flag-ru", "language": "ruZZian", "level": "fluent" }
   ]
 }

@@ -10,7 +10,7 @@
 
   & svg {
     display: inline;
-    margin-right: 0.5rem;
+    margin-right: calc(8px / $vw-mobile-coef);
 
     fill: currentColor;
 
@@ -18,11 +18,13 @@
     height: calc(16px / $vw-mobile-coef);
 
     @media screen and (min-width: $big-mobile-width) {
+      margin-right: calc(8px / $vw-big-mobile-coef);
       width: calc(16px / $vw-big-mobile-coef);
       height: calc(16px / $vw-big-mobile-coef);
     }
 
     @media screen and (min-width: $tablet-width) {
+      margin-right: calc(8px / $vw-tablet-coef);
       width: calc(12px / $vw-tablet-coef);
       height: calc(12px / $vw-tablet-coef);
     }
