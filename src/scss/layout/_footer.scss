@@ -3,8 +3,80 @@
 
   color: $reverse-text-color;
   background-color: $secondary-background-color;
+
+  @media screen and (min-width: $big-mobile-width) {
+    padding: calc(10px / $vw-big-mobile-coef);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    padding: calc(10px / $vw-desktop-coef);
+  }
 }
 
-.footer_image {
-  width: 30px;
+.container.footer_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer_content {
+  display: flex;
+  align-items: center;
+  column-gap: calc(4px / $vw-mobile-coef);
+
+  font-size: smaller;
+
+  @media screen and (min-width: $big-mobile-width) {
+    column-gap: calc(4px / $vw-big-mobile-coef);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    column-gap: calc(8px / $vw-desktop-coef);
+  }
+
+  &::before {
+    content: "";
+
+    width: calc(16px / $vw-mobile-coef);
+    height: calc(16px / $vw-mobile-coef);
+
+    border-radius: calc(16px / $vw-mobile-coef);
+
+    background-image: url(/src/images/black_cat.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: $big-mobile-width) {
+      width: calc(16px / $vw-big-mobile-coef);
+      height: calc(16px / $vw-big-mobile-coef);
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      width: calc(12px / $vw-tablet-coef);
+      height: calc(12px / $vw-tablet-coef);
+    }
+  }
+}
+
+.footer_link {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &:focus {
+    color: $accent-color;
+    outline-color: $accent-color;
+  }
+
+  &.is-touched {
+    color: $accent-color;
+  }
 }

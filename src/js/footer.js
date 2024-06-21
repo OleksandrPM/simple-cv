@@ -1,21 +1,23 @@
 import { linkedin } from "../content/contacts.json";
-import image from "../images/black-cat.ico";
+// import image from "../images/black-cat.ico";
 
 document
   .querySelector(".footer_container")
-  .insertAdjacentHTML("beforeend", buildFooterHTML(linkedin, image));
+  .insertAdjacentHTML("beforeend", buildFooterHTML(linkedin));
 
-function buildFooterHTML(URL, image) {
-  return `<img class="footer_image" src="${image}" alt="black cat">
-      <p class="footer_content">
-        Created by
-        <a
-          href="${URL}"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="LinkedIn"
-          >OleksPM</a
-        >
-      </p>
-      <p class="footer_year">${new Date().getFullYear()}</p>`;
+function buildFooterHTML(URL) {
+  return `<div class="footer_content">
+            <p class="footer_copyright">&copy</p>
+            <p class="footer_year">
+              ${new Date().getFullYear().toString()}
+            </p>
+            <a
+              href="${URL}"
+              class="footer_link touchable"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="See my LinkedIn page"
+              >OleksPM
+            </a>
+        </div>`;
 }

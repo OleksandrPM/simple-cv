@@ -1,8 +1,9 @@
 .address {
   display: flex;
   flex-direction: column;
-
   row-gap: calc(5px / $vw-mobile-coef);
+
+  font-style: normal;
 
   @media screen and (min-width: $tablet-width) {
     row-gap: calc(5px / $vw-desktop-coef);
