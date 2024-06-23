@@ -1,0 +1,119 @@
+.menu-button {
+  // Initial variables
+  $button-width: 32px;
+  $button-height: 24px;
+  $button-padding-width: 4px;
+  $button-border-width: 0px;
+  $button-color: $reverse-text-color;
+  $button-background-color: rgba($secondary-background-color, 0.7);
+
+  //   Calculated variables
+  $burger-width: calc(
+    $button-width - 2 * ($button-padding-width + $button-border-width)
+  );
+  $burger-height: calc(
+    $button-height - 2 * ($button-padding-width + $button-border-width)
+  );
+  $burger-line-width: calc($burger-width / 8);
+  $burger-line-border-radius: calc($burger-line-width/2);
+  $burger-gap: calc(($burger-height - 3 * $burger-line-width) / 2);
+  $burger-translateX: calc($burger-width / 24);
+
+  //   Properties
+  position: relative;
+  display: inline-block;
+
+  width: $button-width;
+  height: $button-height;
+
+  border-radius: calc($burger-line-border-radius * 2);
+  border: none;
+
+  background-color: $button-background-color;
+
+  @media (hover: hover) {
+    &:hover span {
+      background-color: $accent-color;
+    }
+  }
+
+  &:focus {
+    outline-color: $accent-color;
+
+    span {
+      background-color: $accent-color;
+    }
+  }
+
+  &.is-touched span {
+    background-color: $accent-color;
+  }
+
+  & span {
+    position: absolute;
+
+    width: $burger-width;
+    height: $burger-line-width;
+
+    border-radius: $burger-line-border-radius;
+
+    background-color: $button-color;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: opacity, transform, top, background-color;
+
+    pointer-events: none;
+  }
+
+  & span:nth-child(1) {
+    top: calc($button-border-width + $button-padding-width);
+    left: calc($button-border-width + $button-padding-width);
+  }
+
+  & span:nth-child(2) {
+    top: calc(
+      $button-border-width + $button-padding-width + $burger-line-width +
+        $burger-gap
+    );
+    left: calc($button-border-width + $button-padding-width);
+    opacity: 1;
+  }
+
+  & span:nth-child(3) {
+    bottom: calc($button-border-width + $button-padding-width);
+    left: calc($button-border-width + $button-padding-width);
+  }
+
+  &:not(.open):hover span:nth-child(1) {
+    transform: translateX($burger-translateX);
+  }
+
+  &:not(.open):hover span:nth-child(2) {
+    transform: translateX(-$burger-translateX);
+  }
+
+  &:not(.open):hover span:nth-child(3) {
+    transform: translateX($burger-translateX);
+  }
+
+  &.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: calc(
+      $button-border-width + $button-padding-width + $burger-line-width +
+        $burger-gap
+    );
+  }
+
+  &.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: calc(
+      $button-border-width + $button-padding-width + $burger-line-width +
+        $burger-gap
+    );
+  }
+}

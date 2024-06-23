@@ -1,12 +1,30 @@
 .mobile-menu {
-  display: none;
   position: fixed;
-  right: 0;
+  top: 0vh;
+  left: 100vw;
+
+  width: 80vw;
+  max-height: 100vh;
+  padding: 15vw 5vw 5vw 5vw;
 
   color: $reverse-text-color;
-  background-color: rgba($color: $secondary-background-color, $alpha: 0.9);
+  background-color: rgba($color: $secondary-background-color, $alpha: 0.95);
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  transition-property: left;
 
   @media screen and (min-width: $tablet-width) {
     display: none;
   }
+
+  &.open {
+    left: 20vw;
+  }
+}
+
+.mobile-menu_button.menu-button {
+  position: fixed;
+  top: 5vw;
+  right: 5vw;
 }

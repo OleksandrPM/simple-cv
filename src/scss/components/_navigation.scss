@@ -1,0 +1,36 @@
+.nav {
+  overflow-y: auto;
+  // -webkit-overflow-scrolling: touch;
+}
+
+.nav-link {
+  padding-top: calc(10px / $vw-mobile-coef);
+  padding-bottom: calc(10px / $vw-mobile-coef);
+
+  font-size: calc(24px / $vw-mobile-coef);
+  text-transform: capitalize;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color transform;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &:focus {
+    color: $accent-color;
+    outline-color: $accent-color;
+  }
+
+  &.is-touched {
+    color: $accent-color;
+  }
+
+  &.active {
+    transform: scaleY(1.1);
+    color: $accent-color;
+  }
+}
