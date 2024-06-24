@@ -18,11 +18,10 @@
     &:hover {
       color: $accent-color;
     }
-  }
 
-  &:focus {
-    color: $accent-color;
-    outline-color: $accent-color;
+    &:focus {
+      color: $accent-color;
+    }
   }
 
   &.is-touched {

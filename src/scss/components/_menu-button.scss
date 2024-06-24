@@ -35,12 +35,8 @@
     &:hover span {
       background-color: $accent-color;
     }
-  }
 
-  &:focus {
-    outline-color: $accent-color;
-
-    span {
+    &:focus span {
       background-color: $accent-color;
     }
   }
@@ -85,16 +81,18 @@
     left: calc($button-border-width + $button-padding-width);
   }
 
-  &:not(.open):hover span:nth-child(1) {
-    transform: translateX($burger-translateX);
-  }
+  @media (hover: hover) {
+    &:not(.open):hover span:nth-child(1) {
+      transform: translateX($burger-translateX);
+    }
 
-  &:not(.open):hover span:nth-child(2) {
-    transform: translateX(-$burger-translateX);
-  }
+    &:not(.open):hover span:nth-child(2) {
+      transform: translateX(-$burger-translateX);
+    }
 
-  &:not(.open):hover span:nth-child(3) {
-    transform: translateX($burger-translateX);
+    &:not(.open):hover span:nth-child(3) {
+      transform: translateX($burger-translateX);
+    }
   }
 
   &.open span:nth-child(1) {

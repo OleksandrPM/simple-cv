@@ -10,7 +10,9 @@ export function addNavItemHTML(sectionName) {
       "beforeend",
       `<li class="nav-item">
           <a href="#${sectionName}" 
-            class="nav-link ${sectionName === "hero" ? "active" : ""}" 
+            class="nav-link touchable ${
+              sectionName === "hero" ? "active" : ""
+            }" 
             data-id="${sectionName}">
             ${sectionName === "hero" ? "Home" : sectionName}
           </a>
