@@ -45,11 +45,11 @@
       transform: scale(1.2);
     }
 
-    &:focus {
-      filter: grayscale(0);
-      transform: scale(1.2);
-      outline-color: $pdf-icon-color;
-    }
+    // &:focus {
+    //   filter: grayscale(0);
+    //   transform: scale(1.2);
+    //   outline-color: $pdf-icon-color;
+    // }
   }
 
   &.is-touched {
