@@ -1,0 +1,13 @@
+.language-picker {
+  position: fixed;
+
+  @media screen and (max-width: calc($big-mobile-width - 0.02px)) {
+    top: 4vw;
+    left: 4vw;
+  }
+
+  @media screen and (min-width: calc($tablet-width )) {
+    top: 3vw;
+    right: 3vw;
+  }
+}

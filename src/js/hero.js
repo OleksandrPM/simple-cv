@@ -1,11 +1,15 @@
-import { name, surname, qualification, summary } from "../content/hero.json";
+import content from "../content//heroContent.json";
 
-document.querySelector(".hero_container").insertAdjacentHTML(
-  "beforeend",
-  `<p class="hero_qualification">${qualification}</p>
-    <h1 class="hero_title">${name} ${surname}</h1>
-    <article class="summary hero_summary">
-      <h2 class="summary-title visually-hidden">Summary</h2>
-      <p class="summary-text">${summary}</p>
-    </article>`
-);
+export function setHeroContent(currentLanguage) {
+  const currentContent = content[currentLanguage];
+
+  const { name, surname, qualification, summaryTitle, summary } =
+    currentContent;
+
+  const heroEl = document.querySelector(".hero_container");
+
+  heroEl.querySelector(".hero_qualification").textContent = qualification;
+  heroEl.querySelector(".hero_title").textContent = `${name} ${surname}`;
+  heroEl.querySelector(".summary-title").textContent = summaryTitle;
+  heroEl.querySelector(".summary-text").textContent = summary;
+}

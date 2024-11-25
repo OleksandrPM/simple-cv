@@ -1,0 +1,26 @@
+{
+  "sectionTitle": { "en": "Contacts", "cs": "Kontakty", "uk": "Контакти" },
+  "contacts": {
+    "phone": "+420774620986",
+    "email": "olekspm.dev@gmail.com",
+    "github": "https://github.com/OleksandrPM",
+    "linkedin": "https://www.linkedin.com/in/oleksandr-moskaliuk/",
+    "address": {
+      "en": {
+        "city": "Mladá Boleslav",
+        "region": "Central Bohemia region",
+        "state": "Czech Republic"
+      },
+      "cs": {
+        "city": "Mladá Boleslav",
+        "region": "Středočeský kraj",
+        "state": "Česká Republika"
+      },
+      "uk": {
+        "city": "Млада Болеслав",
+        "region": "Середньочеський край",
+        "state": "Чеська Респу́бліка"
+      }
+    }
+  }
+}

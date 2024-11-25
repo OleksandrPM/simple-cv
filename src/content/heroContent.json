@@ -1,0 +1,23 @@
+{
+  "en": {
+    "name": "Oleksandr",
+    "surname": "Moskaliuk",
+    "qualification": "Full-stack JavaScript developer",
+    "summaryTitle": "Summary",
+    "summary": "I am an inspired full-stack JavaScript developer with strong analytical thinking and well-developed organizational skills. Ambitious, highly responsible, punctual, and goal-oriented person, always ready to learn and gain new experiences. The ability to focus on details and stress resistance are also my good strengths. I am a friendly team player with a good sense of humor."
+  },
+  "cs": {
+    "name": "Oleksandr",
+    "surname": "Moskaliuk",
+    "qualification": "Full-stack JavaScript vývojář",
+    "summaryTitle": "Shrnutí",
+    "summary": "Inspirovaný Full-stack Javascript vývojář se silným analytickým myšlením a dobře vyvinutými organizačními schopnostmi. Ambiciózní, vysoce odpovědný, dochvilný a cílevědomý, vždy připraven se učit a získávat nové zkušenosti. Schopnost zaměřit se na detaily a odolnost vůči stresu jsou také moje silné stránky. Jsem přátelský týmový hráč se smyslem pro humor."
+  },
+  "uk": {
+    "name": "Олександр",
+    "surname": "Москалюк",
+    "qualification": "Full-stack JavaScript розробник",
+    "summaryTitle": "Резюме",
+    "summary": "Я є ініціативним full-stack JavaScript розробником із сильним аналітичним мисленням і добре розвиненими організаційними здібностями. Амбіційний, високовідповідальний, пунктуальний та цілеспрямований, завжди готовий навчатися та здобувати новий досвід. Серед моїх переваг - уміння зосереджуватися на деталях і стресостійкість. Сильний командний гравець з хорошим почуттям гумору."
+  }
+}

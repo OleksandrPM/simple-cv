@@ -1,9 +1,8 @@
-import { linkedin } from "../content/contacts.json";
-// import image from "../images/black-cat.ico";
+import { contacts } from "../content/contactsContent.json";
 
 document
   .querySelector(".footer_container")
-  .insertAdjacentHTML("beforeend", buildFooterHTML(linkedin));
+  .insertAdjacentHTML("beforeend", buildFooterHTML(contacts.linkedin));
 
 function buildFooterHTML(URL) {
   return `<div class="footer_content">

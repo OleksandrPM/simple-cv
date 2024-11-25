@@ -1,26 +1,40 @@
-import { techSkills, softSkills, languages } from "../content/skills.json";
+import {
+  techSkills,
+  softSkills,
+  languageSkills,
+} from "../content/skillsContent.json";
 import sprite from "../images/sprite.svg";
 
-document.querySelectorAll(".tech-skills_container").forEach((el) => {
-  el.insertAdjacentHTML("beforeend", buildSkillsListHTML(techSkills));
-});
+export function renderSkills(currentLanguage) {
+  document.querySelectorAll(".tech-skills_container").forEach((el) => {
+    const { sectionTitle, skills } = techSkills[currentLanguage];
 
-document.querySelectorAll(".soft-skills_container").forEach((el) => {
-  el.insertAdjacentHTML("beforeend", buildSkillsListHTML(softSkills));
-});
+    el.querySelector(".section-title").textContent = sectionTitle;
+    el.querySelector(".skills-list").innerHTML = buildSkillsListHTML(skills);
+  });
 
-document.querySelectorAll(".languages_container").forEach((el) => {
-  el.insertAdjacentHTML("beforeend", buildLanguagesListHTML(languages));
-});
+  document.querySelectorAll(".soft-skills_container").forEach((el) => {
+    const { sectionTitle, skills } = softSkills[currentLanguage];
+
+    el.querySelector(".section-title").textContent = sectionTitle;
+    el.querySelector(".skills-list").innerHTML = buildSkillsListHTML(skills);
+  });
+
+  document.querySelectorAll(".languages_container").forEach((el) => {
+    const { sectionTitle, languages } = languageSkills[currentLanguage];
+
+    el.querySelector(".section-title").textContent = sectionTitle;
+    el.querySelector(".skills-list").innerHTML =
+      buildLanguagesListHTML(languages);
+  });
+}
 
 function buildSkillsListHTML(skills) {
-  return `<ul class="skills-list marked-list">${skills
-    .map((skill) => `<li><p>${skill}</p></li>`)
-    .join("")}</ul>`;
+  return skills.map((skill) => `<li><p>${skill}</p></li>`).join("");
 }
 
 function buildLanguagesListHTML(languages) {
-  return `<ul class="skills-list languages">${languages
+  return languages
     .map(
       (language) => `<li>
                       <svg>
@@ -29,5 +43,5 @@ function buildLanguagesListHTML(languages) {
                       <p>${language.language} - ${language.level}</p>
                     </li>`
     )
-    .join("")}</ul>`;
+    .join("");
 }

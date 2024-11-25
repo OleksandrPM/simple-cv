@@ -1,0 +1,161 @@
+{
+  "techSkills": {
+    "en": {
+      "sectionTitle": "Tech-skills",
+      "skills": [
+        "HTML",
+        "CSS / SCSS",
+        "JavaScript",
+        "React.js",
+        "REST API",
+        "Node.js",
+        "MongoDB",
+        "PostgreSQL",
+        "GIT",
+        "Responsive / Adaptive Design"
+      ]
+    },
+    "cs": {
+      "sectionTitle": "Technické dovednosti",
+      "skills": [
+        "HTML",
+        "CSS / SCSS",
+        "JavaScript",
+        "React.js",
+        "REST API",
+        "Node.js",
+        "MongoDB",
+        "PostgreSQL",
+        "GIT",
+        "Responzivní / Adaptivní design"
+      ]
+    },
+    "uk": {
+      "sectionTitle": "Технічні навички",
+      "skills": [
+        "HTML",
+        "CSS / SCSS",
+        "JavaScript",
+        "React.js",
+        "REST API",
+        "Node.js",
+        "MongoDB",
+        "PostgreSQL",
+        "GIT",
+        "Респонсивний / Адаптивний дизайн"
+      ]
+    }
+  },
+  "softSkills": {
+    "en": {
+      "sectionTitle": "Soft-skills",
+      "skills": [
+        "Mindfulness",
+        "Autonomy",
+        "Critical thinking",
+        "Teamwork",
+        "Creativity",
+        "Stress resistance"
+      ]
+    },
+    "cs": {
+      "sectionTitle": "Měkké dovednosti",
+      "skills": [
+        "Všímavost",
+        "Autonomie",
+        "Kritické myšlení",
+        "Týmová práce",
+        "Tvořivost",
+        "Odolnost vůči stresu"
+      ]
+    },
+    "uk": {
+      "sectionTitle": "М'які навички",
+      "skills": [
+        "Уважність",
+        "Автономність",
+        "Критичне мислення",
+        "Командна робота",
+        "Креативність",
+        "Стресостійкість"
+      ]
+    }
+  },
+  "languageSkills": {
+    "en": {
+      "sectionTitle": "Languages",
+      "languages": [
+        {
+          "id": "flag-ua",
+          "language": "Ukrainian",
+          "level": "fluent (native)"
+        },
+        {
+          "id": "flag-gb",
+          "language": "English",
+          "level": "intermediate"
+        },
+        {
+          "id": "flag-cz",
+          "language": "Czech",
+          "level": "intermediate"
+        },
+        {
+          "id": "flag-ru",
+          "language": "Russian",
+          "level": "fluent"
+        }
+      ]
+    },
+    "cs": {
+      "sectionTitle": "Jazyky",
+      "languages": [
+        {
+          "id": "flag-ua",
+          "language": "Ukrajinština",
+          "level": "plynně (rodilý mluvčí)"
+        },
+        {
+          "id": "flag-gb",
+          "language": "Angličtina",
+          "level": "středně (B1/B2)"
+        },
+        {
+          "id": "flag-cz",
+          "language": "Čeština",
+          "level": "středně (B1/B2)"
+        },
+        {
+          "id": "flag-ru",
+          "language": "Ruština",
+          "level": "plynně"
+        }
+      ]
+    },
+    "uk": {
+      "sectionTitle": "Мови",
+      "languages": [
+        {
+          "id": "flag-ua",
+          "language": "Українська",
+          "level": "вільно (рідна мова)"
+        },
+        {
+          "id": "flag-gb",
+          "language": "Англійська",
+          "level": "середній рвень (B1/B2)"
+        },
+        {
+          "id": "flag-cz",
+          "language": "Чеська",
+          "level": "середній рвень (B1/B2)"
+        },
+        {
+          "id": "flag-ru",
+          "language": "Російська",
+          "level": "вільно"
+        }
+      ]
+    }
+  }
+}
