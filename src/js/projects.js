@@ -1,40 +1,63 @@
-import projects from "../content/projects.json";
+import projectsContent from "../content/projectsContent.json";
 
-document.querySelector(".project-list").innerHTML = `${buildProjectListHTML(
-  projects
-)}`;
+const {
+  sectionTitle,
+  roleTitle,
+  livepageTitle,
+  codeTitle,
+  frontendCodeTitle,
+  backendCodeTitle,
+  projects,
+} = projectsContent;
 
-function buildProjectListHTML(projects) {
+const sectionEl = document.querySelector(".projects");
+const titleEl = sectionEl.querySelector(".section-title");
+const listEl = sectionEl.querySelector(".project-list");
+
+export function renderProjects(language) {
+  titleEl.textContent = sectionTitle[language];
+  listEl.innerHTML = `${buildProjectListHTML(projects, language)}`;
+}
+
+function buildProjectListHTML(projects, language) {
   return `${projects
     .map((project) => {
-      return `<li class="project-item">${buildProjectHTML(project)}</li>`;
+      return `<li class="project-item">${buildProjectHTML(
+        project,
+        language
+      )}</li>`;
     })
     .join("")}`;
 }
 
-function buildProjectHTML(project) {
+function buildProjectHTML(project, language) {
   const { name, links, techstack, description, role } = project;
 
   return `<article class="project-article">
             <h3 class="project-name">${name}
               <span class="project-stack">[${techstack.join(", ")}]</span>
             </h3>                 
-            <p class="project-description">${description}</p>
+            <p class="project-description">${description[language]}</p>
             <p class="project-role">
-              <span class="emphasis">Role: </span>${role}
+              <span class="emphasis">${roleTitle[language]}: </span>${
+    role[language]
+  }
             </p>
             <ul class="project-links">
-              ${buildLinkListHTML(links)}
+              ${buildLinkListHTML(links, language)}
             </ul>
           </article>`;
 }
 
-function buildLinkListHTML(links) {
+function buildLinkListHTML(links, language) {
   let listHTML = "";
 
   for (let prop in links) {
     listHTML += `<li class="project-links_item">
-                  <span class="emphasis">${prop}: </span>
+                  <span class="emphasis">${getLinkTitle(
+                    prop,
+                    language
+                  )}: </span>
                   <a
                     href="${links[prop]}"
                     class="project-link touchable"
@@ -47,4 +70,20 @@ function buildLinkListHTML(links) {
   }
 
   return listHTML;
+}
+
+function getLinkTitle(prop, language) {
+  switch (prop) {
+    case "livepage":
+      return livepageTitle[language];
+    case "code":
+      return codeTitle[language];
+    case "code-frontend":
+      return frontendCodeTitle[language];
+    case "code-backend":
+      return backendCodeTitle[language];
+
+    default:
+      return "link";
+  }
 }

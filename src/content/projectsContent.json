@@ -1,0 +1,143 @@
+{
+  "sectionTitle": {
+    "en": "Projects Experience",
+    "cs": "Zkušenosti s projekty",
+    "uk": "Проекти"
+  },
+  "roleTitle": {
+    "en": "Role",
+    "cs": "Role",
+    "uk": "Роль"
+  },
+  "livepageTitle": {
+    "en": "live page",
+    "cs": "živá stránka",
+    "uk": "жива сторінка"
+  },
+  "codeTitle": {
+    "en": "code",
+    "cs": "kód",
+    "uk": "код"
+  },
+  "frontendCodeTitle": {
+    "en": "frontend code",
+    "cs": "frontend kód",
+    "uk": "фронтенд код"
+  },
+  "backendCodeTitle": {
+    "en": "backend code",
+    "cs": "backend kód",
+    "uk": "бекенд код"
+  },
+  "projects": [
+    {
+      "name": "Drink Master",
+      "links": {
+        "livepage": "https://ansachuk.github.io/FSSF-DrinkMaster/welcome",
+        "code-frontend": "https://github.com/ansachuk/FSSF-DrinkMaster",
+        "code-backend": "https://github.com/Fdobrovols/drink-master-fssf-backend"
+      },
+      "techstack": [
+        "HTML",
+        "SASS",
+        "JS",
+        "React",
+        "Redux",
+        "Vite",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "description": {
+        "en": "A web application, that allows you to find different cocktails, create new, and store favorite cocktails.",
+        "cs": "Webová aplikace, která vám umožní najít různé koktejly, vytvářet nové a ukládat oblíbené koktejly.",
+        "uk": "Веб-додаток, який дозволяє знаходити різні коктейлі, створювати нові та зберігати улюблені коктейлі."
+      },
+      "role": {
+        "en": "backend developer (routers, controllers, database)",
+        "cs": "backend vývojář (routery, řadiče, databáze)",
+        "uk": "бекенд-розробник (маршрутизатори, контролери, база даних)"
+      }
+    },
+    {
+      "name": "Diva",
+      "links": {
+        "livepage": "https://diva-mb.cz/",
+        "code": "https://github.com/OleksandrPM/diva-mb"
+      },
+      "techstack": ["HTML", "SASS", "JS", "Parcel", "Google Drive"],
+      "description": {
+        "en": "A landing page of the beauty studio with the possibility of adding/deleting images in the gallery section and an editable advertising block.",
+        "cs": "Vstupní stránka kosmetického studia s možností přidávání/mazání obrázků v sekci galerie a editovatelným reklamním blokem.",
+        "uk": "Лендінг студії краси з можливістю додавання/видалення зображень у розділі галереї та редагованим рекламним блоком."
+      },
+      "role": {
+        "en": "developer, designer (individual project)",
+        "cs": "vývojář, designér (individuální projekt)",
+        "uk": "розробник, дизайнер (індивідуальний проект)"
+      }
+    },
+    {
+      "name": "Book",
+      "links": {
+        "livepage": "https://mikhailosalko.github.io/JSSF-JavaScript-Special-Forces/",
+        "code": "https://github.com/MikhailoSalko/JSSF-JavaScript-Special-Forces"
+      },
+      "techstack": [
+        "HTML",
+        "SASS",
+        "JS",
+        "Handlebars",
+        "REST API",
+        "AJAX",
+        "Parcel"
+      ],
+      "description": {
+        "en": "This project is an online bookstore, where users can browse and purchase books of various genres.",
+        "cs": "Tento projekt je internetovým knihkupectvím, kde si uživatelé mohou prohlížet a nakupovat knihy různých žánrů.",
+        "uk": "Цей проект є книжковим інтернет-магазином, де користувачі можуть переглядати та купувати книги різних жанрів."
+      },
+      "role": {
+        "en": "developer of categories section and dark/light theme switching",
+        "cs": "vývojář sekce kategorií a přepínání tmavých/světlých témat",
+        "uk": "розробник розділу категорій і перемикання темної/світлої теми"
+      }
+    },
+    {
+      "name": "Ice Cream",
+      "links": {
+        "livepage": "https://oleksandrpm.github.io/ice-cream/",
+        "code": "https://github.com/OleksandrPM/ice-cream"
+      },
+      "techstack": ["HTML", "SASS", "JS", "Parcel"],
+      "description": {
+        "en": "A website for an ice cream product company. Adaptive design, animations, modal windows, and burger menu for ordering.",
+        "cs": "Web společnosti vyrábějící zmrzlinu. Adaptivní design, animace, modální okna a burger-menu pro objednání.",
+        "uk": "Веб-сайт компанії з виробництва морозива. Адаптивний дизайн, анімація, модальні вікна та бургер-меню для замовлення."
+      },
+      "role": {
+        "en": "Tech lead, developer of gallery and customer reviews sections, overall composing of the project",
+        "cs": "Tech lead, vývojář sekce galerie a zpětné vazby od zákazníků, celkové sestavení projektu",
+        "uk": "Тех-лід, розробник розділів галереї та відгуків клієнтів, загальна збірка проекту"
+      }
+    },
+    {
+      "name": "WebStudio",
+      "links": {
+        "livepage": "https://oleksandrpm.github.io/web-studio-site/",
+        "code": "https://github.com/OleksandrPM/web-studio-site"
+      },
+      "techstack": ["HTML", "SASS", "JS"],
+      "description": {
+        "en": "A website of WebStudio company. Responsive design, transform effects, modal windows.",
+        "cs": "Web společnosti WebStudio. Responzivní design, transformační efekty, modální okna.",
+        "uk": "Сайт компанії WebStudio. Адаптивний дизайн, ефекти трансформації, модальні вікна."
+      },
+      "role": {
+        "en": "developer (individual project)",
+        "cs": "vývojář (individuální projekt)",
+        "uk": "розробник (індивідуальний проект)"
+      }
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import { renderContacts } from "./contacts";
 import { setHeroContent } from "./hero";
+import { renderProjects } from "./projects";
 import {
   currentLanguage,
   openLangPickerListener,
@@ -21,4 +22,5 @@ export function buildPage(currentLanguage) {
   setHeroContent(currentLanguage);
   renderContacts(currentLanguage);
   renderSkills(currentLanguage);
+  renderProjects(currentLanguage);
 }
