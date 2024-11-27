@@ -8,6 +8,7 @@ import { renderContacts } from "./contacts";
 import { renderSkills } from "./skills";
 import { renderProjects } from "./projects";
 import { renderWork } from "./work";
+import { renderEducation } from "./education";
 
 // Set document`s lang attribute
 document.documentElement.lang = currentLanguage;
@@ -25,4 +26,5 @@ export function buildPage(currentLanguage) {
   renderSkills(currentLanguage);
   renderProjects(currentLanguage);
   renderWork(currentLanguage);
+  renderEducation(currentLanguage);
 }

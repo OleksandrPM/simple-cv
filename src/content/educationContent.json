@@ -1,0 +1,68 @@
+{
+  "sectionTitle": {
+    "en": "Education",
+    "cs": "Vzdělání",
+    "uk": "Освіта"
+  },
+  "periodTitle": {
+    "en": "Period",
+    "cs": "Období",
+    "uk": "Період"
+  },
+  "educations": {
+    "en": [
+      {
+        "id": "1",
+        "schoolName": "GoIT - start your career in IT",
+        "startTime": "2022",
+        "endTime": "2023",
+        "qualification": "Full-stack developer",
+        "diplomaLink": "https://drive.google.com/file/d/1coGeNr55ijAtuteIGMOWJjV6EGTvhPLY/view?usp=sharing"
+      },
+      {
+        "id": "2",
+        "schoolName": "Military Engineering Institute at the Podillia State Agrarian Technical Academy",
+        "startTime": "1997",
+        "endTime": "2001",
+        "qualification": "Bachelor of Military Sciences, officer of military management at the tactical level",
+        "diplomaLink": "https://drive.google.com/file/d/1SMr61qSWxtUPnydhWvAtBQ62amJTQSjb/view?usp=sharing"
+      }
+    ],
+    "cs": [
+      {
+        "id": "1",
+        "schoolName": "GoIT - start your career in IT",
+        "startTime": "2022",
+        "endTime": "2023",
+        "qualification": "Full-stack vývojář",
+        "diplomaLink": "https://drive.google.com/file/d/1coGeNr55ijAtuteIGMOWJjV6EGTvhPLY/view?usp=sharing"
+      },
+      {
+        "id": "2",
+        "schoolName": "Vojenský inženýrský institut při Podillya státní agrárně technické akademii",
+        "startTime": "1997",
+        "endTime": "2001",
+        "qualification": "Bakalář vojenských věd, důstojník vojenského managementu na taktické úrovni",
+        "diplomaLink": "https://drive.google.com/file/d/1SMr61qSWxtUPnydhWvAtBQ62amJTQSjb/view?usp=sharing"
+      }
+    ],
+    "uk": [
+      {
+        "id": "1",
+        "schoolName": "GoIT - start your career in IT",
+        "startTime": "2022",
+        "endTime": "2023",
+        "qualification": "Фулстек розробник",
+        "diplomaLink": "https://drive.google.com/file/d/1coGeNr55ijAtuteIGMOWJjV6EGTvhPLY/view?usp=sharing"
+      },
+      {
+        "id": "2",
+        "schoolName": "Військово-інженерний інститут при Подільській державній аграрно-технічній академії",
+        "startTime": "1997",
+        "endTime": "2001",
+        "qualification": "Бакалавр військових наук, офіцер військового управління тактичного рівня",
+        "diplomaLink": "https://drive.google.com/file/d/1SMr61qSWxtUPnydhWvAtBQ62amJTQSjb/view?usp=sharing"
+      }
+    ]
+  }
+}

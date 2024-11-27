@@ -43,32 +43,28 @@
             <path fill="#cad1d8" style="fill: var(--color3, #cad1d8)"
                 d="M25 27h-19v1h19c0.55 0 1-0.45 1-1v-1c0 0.55-0.45 1-1 1z"></path>
         </symbol>
-        <symbol id="flag-cz" viewBox="0 0 43 32">
-            <path fill="#fff" style="fill: var(--color1, #fff)" d="M0 0h42.667v16h-42.667z"></path>
-            <path fill="#d7141a" style="fill: var(--color2, #d7141a)" d="M0 16h42.667v16h-42.667z"></path>
-            <path fill="#11457e" style="fill: var(--color3, #11457e)" d="M24 16l-24-16v32z"></path>
+        <symbol id="flag-cz" viewBox="0 0 640 480">
+            <path fill="#fff" d="M0 0h640v240H0z" />
+            <path fill="#d7141a" d="M0 240h640v240H0z" />
+            <path fill="#11457e" d="M360 240 0 0v480z" />
         </symbol>
-        <symbol id="flag-ru" viewBox="0 0 43 32">
-            <path fill="#fff" style="fill: var(--color1, #fff)" d="M0 0h42.667v10.667h-42.667z"></path>
-            <path fill="#0039a6" style="fill: var(--color2, #0039a6)" d="M0 10.667h42.667v10.667h-42.667z"></path>
-            <path fill="#d52b1e" style="fill: var(--color3, #d52b1e)" d="M0 21.333h42.667v10.667h-42.667z"></path>
+        <symbol id="flag-ru" viewBox="0 0 640 480">
+            <path fill="#fff" d="M0 0h640v160H0z" />
+            <path fill="#0039a6" d="M0 160h640v160H0z" />
+            <path fill="#d52b1e" d="M0 320h640v160H0z" />
         </symbol>
-        <symbol id="flag-ua" viewBox="0 0 43 32">
-            <path fill="#ffd700" style="fill: var(--color1, #ffd700)" d="M0 0h42.667v32h-42.667z"></path>
-            <path fill="#0057b8" style="fill: var(--color2, #0057b8)" d="M0 0h42.667v16h-42.667z"></path>
+        <symbol id="flag-ua" viewBox="0 0 640 480">
+            <path fill="gold" d="M0 0h640v480H0z" />
+            <path fill="#0057b8" d="M0 0h640v240H0z" />
         </symbol>
-        <symbol id="flag-gb" viewBox="0 0 43 32">
-            <path fill="#012169" style="fill: var(--color1, #012169)" d="M0 0h42.667v32h-42.667z"></path>
-            <path fill="#fff" style="fill: var(--color2, #fff)"
-                d="M5 0l16.267 12.067 16.2-12.067h5.2v4.133l-16 11.933 16 11.867v4.067h-5.333l-16-11.933-15.933 11.933h-5.4v-4l15.933-11.867-15.933-11.867v-4.267z">
-            </path>
-            <path fill="#c8102e" style="fill: var(--color3, #c8102e)"
-                d="M28.267 18.733l14.4 10.6v2.667l-18.067-13.267zM16 20.067l0.4 2.333-12.8 9.6h-3.6zM42.667 0v0.2l-16.6 12.533 0.133-2.933 13.133-9.8zM0 0l15.933 11.733h-4l-11.933-8.933z">
-            </path>
-            <path fill="#fff" style="fill: var(--color2, #fff)"
-                d="M16.067 0v32h10.667v-32zM0 10.667v10.667h42.667v-10.667z"></path>
-            <path fill="#c8102e" style="fill: var(--color3, #c8102e)" d="M0 12.867v6.4h42.667v-6.4zM18.2 0v32h6.4v-32z">
-            </path>
+        <symbol id="flag-gb" viewBox="0 0 640 480">
+            <path fill="#012169" d="M0 0h640v480H0z" />
+            <path fill="#FFF"
+                d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0z" />
+            <path fill="#C8102E"
+                d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z" />
+            <path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z" />
+            <path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z" />
         </symbol>
     </defs>
 </svg>
