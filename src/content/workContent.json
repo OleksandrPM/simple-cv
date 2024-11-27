@@ -1,0 +1,93 @@
+{
+  "sectionTitle": {
+    "en": "Work Experience",
+    "cs": "Pracovní zkušenosti",
+    "uk": "Досвід роботи"
+  },
+  "employerTitle": {
+    "en": "Employer",
+    "cs": "Zaměstnavatel",
+    "uk": "Працедавець"
+  },
+  "positionTitle": {
+    "en": "Position",
+    "cs": "Pozice",
+    "uk": "Посада"
+  },
+  "periodTitle": {
+    "en": "Period",
+    "cs": "Období",
+    "uk": "Період"
+  },
+  "works": {
+    "en": [
+      {
+        "employer": "Škoda Auto Joint Stock Company",
+        "startTime": "2019",
+        "endTime": "present time",
+        "position": "Production operator",
+        "description": "Performing various operations during the manufacture of cars. The work in tact."
+      },
+      {
+        "employer": "Self-employed",
+        "startTime": "2014",
+        "endTime": "2019",
+        "position": "Private entrepreneur",
+        "description": "Local retail"
+      },
+      {
+        "employer": "The State Emergency Service of Ukraine",
+        "startTime": "2001",
+        "endTime": "2014",
+        "position": "Head of the group of pyrotechnic works",
+        "description": "Organization and direct management of works on disposal of obsolete explosive objects and the performance of other pyrotechnic works."
+      }
+    ],
+    "cs": [
+      {
+        "employer": "Škoda Auto a.s.",
+        "startTime": "2019",
+        "endTime": "současnost",
+        "position": "Operátor výroby",
+        "description": "Provádění různých operací při výrobě automobilů. Práce v taktu."
+      },
+      {
+        "employer": "OSVČ",
+        "startTime": "2014",
+        "endTime": "2019",
+        "position": "Soukromý podnikatel",
+        "description": "Místní maloobchod"
+      },
+      {
+        "employer": "Státní pohotovostní služba Ukrajiny",
+        "startTime": "2001",
+        "endTime": "2014",
+        "position": "Vedoucí skupiny pyrotechnických prací",
+        "description": "Organizace a přímé řízení prací na likvidaci zastaralých výbušných předmětů a provádění jiných pyrotechnických prací."
+      }
+    ],
+    "uk": [
+      {
+        "employer": "АТ «Шкода Авто»",
+        "startTime": "2019",
+        "endTime": "теперішній час",
+        "position": "Оператор виробництва",
+        "description": "Виконання різноманітних операцій під час виготовлення автомобілів. Робота в такті."
+      },
+      {
+        "employer": "Самозайнятий",
+        "startTime": "2014",
+        "endTime": "2019",
+        "position": "Приватний підприємець",
+        "description": "Місцева роздрібна торгівля"
+      },
+      {
+        "employer": "Державна служба України з надзвичайних ситуацій",
+        "startTime": "2001",
+        "endTime": "2014",
+        "position": "Начальник групи піротехнічних робіт",
+        "description": "Організація та безпосереднє керівництво роботами по знешкодженню застарілих вибухонебезпечних предметів та виконання інших піротехнічних робіт."
+      }
+    ]
+  }
+}

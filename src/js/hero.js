@@ -1,7 +1,7 @@
 import content from "../content//heroContent.json";
 
-export function setHeroContent(currentLanguage) {
-  const currentContent = content[currentLanguage];
+export function setHeroContent(language) {
+  const currentContent = content[language];
 
   const { name, surname, qualification, summaryTitle, summary } =
     currentContent;

@@ -20,12 +20,8 @@
   @media screen and (min-width: $tablet-width) {
     font-size: calc(12px / $vw-tablet-coef);
   }
+}
 
-  & .work-employer {
-    color: $accent-color;
-  }
-
-  & .non-emphasis {
-    color: $main-text-color;
-  }
+.work-employer {
+  color: $accent-color;
 }

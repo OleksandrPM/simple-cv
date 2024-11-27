@@ -1,12 +1,13 @@
-import { renderContacts } from "./contacts";
-import { setHeroContent } from "./hero";
-import { renderProjects } from "./projects";
 import {
   currentLanguage,
   openLangPickerListener,
   setCurrentOption,
 } from "./setLanguage";
+import { setHeroContent } from "./hero";
+import { renderContacts } from "./contacts";
 import { renderSkills } from "./skills";
+import { renderProjects } from "./projects";
+import { renderWork } from "./work";
 
 // Set document`s lang attribute
 document.documentElement.lang = currentLanguage;
@@ -23,4 +24,5 @@ export function buildPage(currentLanguage) {
   renderContacts(currentLanguage);
   renderSkills(currentLanguage);
   renderProjects(currentLanguage);
+  renderWork(currentLanguage);
 }
