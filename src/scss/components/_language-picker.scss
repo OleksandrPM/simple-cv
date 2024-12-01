@@ -1,7 +1,8 @@
 .language-picker {
-  position: fixed;
+  position: absolute;
+  border-radius: 5px;
 
-  @media screen and (max-width: calc($big-mobile-width - 0.02px)) {
+  @media screen and (max-width: calc($tablet-width - 0.02px)) {
     top: 4vw;
     left: 4vw;
   }
@@ -9,5 +10,17 @@
   @media screen and (min-width: calc($tablet-width )) {
     top: 3vw;
     right: 3vw;
+  }
+
+  & select {
+    border-radius: 5px;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  & option {
+    border-radius: 5px;
   }
 }

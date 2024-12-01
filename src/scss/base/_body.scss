@@ -5,8 +5,11 @@ html {
 }
 
 .page {
+  position: relative;
   display: flex;
   flex-direction: column;
+
+  max-width: 1440px;
 
   font-family: $regular-font;
   font-size: calc(16px / $vw-mobile-coef);

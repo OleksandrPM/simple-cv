@@ -1,0 +1,18 @@
+{
+  "hero": { "en": "Home", "cs": "Domů", "uk": "Додому" },
+  "projects": { "en": "Projects", "cs": "Projekty", "uk": "Проекти" },
+  "work": { "en": "Work", "cs": "Práce", "uk": "Робота" },
+  "education": { "en": "Education", "cs": "Vzdělání", "uk": "Освіта" },
+  "tech-skills": {
+    "en": "Tech-skills",
+    "cs": "Technické dovednosti",
+    "uk": "Технічні навички"
+  },
+  "soft-skills": {
+    "en": "Soft skills",
+    "cs": "Měkké dovednosti",
+    "uk": "М'які навички"
+  },
+  "languages": { "en": "Languages", "cs": "Jazyky", "uk": "Мови" },
+  "contacts": { "en": "Contacts", "cs": "Kontakty", "uk": "Контакти" }
+}

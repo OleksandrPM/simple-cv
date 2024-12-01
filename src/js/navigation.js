@@ -1,24 +1,38 @@
+import navTitles from "../content/navTitles.json";
+import { setSectionsIds } from "./sectionsId";
+
 const navEls = document.querySelectorAll(".nav-list");
 const sectionEls = document.querySelectorAll("section");
 
 const linkClassName = "nav-link";
 const activeLinkClassName = "active";
 
-export function addNavItemHTML(sectionName) {
-  navEls.forEach((nav) => {
-    nav.insertAdjacentHTML(
-      "beforeend",
-      `<li class="nav-item">
-          <a href="#${sectionName}" 
-            class="nav-link touchable ${
-              sectionName === "hero" ? "active" : ""
-            }" 
-            data-id="${sectionName}">
-            ${sectionName === "hero" ? "Home" : sectionName}
-          </a>
-      </li>`
-    );
+export function renderNavigation(language) {
+  const sectionsIds = setSectionsIds();
+
+  navEls.forEach((navEl) => {
+    navEl.innerHTML = buildNavListHTML(sectionsIds, language);
   });
+}
+
+function buildNavListHTML(sectionsIds, language) {
+  return sectionsIds
+    .map((id) => {
+      return buildNavItemHTML(id, language);
+    })
+    .join("");
+}
+
+function buildNavItemHTML(sectionId, language) {
+  return `<li class="nav-item">
+            <a href="#${sectionId}" 
+              class="nav-link touchable ${
+                sectionId === "hero" ? "active" : ""
+              }" 
+              data-id="${sectionId}">
+              ${navTitles[sectionId][language]}
+            </a>
+          </li>`;
 }
 
 export function switchNavLinkInScrolling() {
@@ -32,46 +46,33 @@ export function switchNavLinkInScrolling() {
     }
   });
 
+  switchCurrentNavLink(currentSectionId);
+}
+
+export function switchNavLinkByClick(DOMEl) {
+  const elClasses = DOMEl.classList;
+
+  if (elClasses.contains(linkClassName)) {
+    const currentLinkId = DOMEl.dataset.id;
+
+    switchCurrentNavLink(currentLinkId);
+  }
+}
+
+function switchCurrentNavLink(currentId) {
   navEls.forEach((navEl) => {
     const navLinkEls = navEl.querySelectorAll(".nav-link");
 
     navLinkEls.forEach((navLinkEl) => {
       if (
         !navLinkEl.classList.contains(activeLinkClassName) &&
-        navLinkEl.dataset.id === currentSectionId
+        navLinkEl.dataset.id === currentId
       ) {
         navLinkEl.classList.add(activeLinkClassName);
       }
-      if (navLinkEl.dataset.id !== currentSectionId) {
+      if (navLinkEl.dataset.id !== currentId) {
         navLinkEl.classList.remove(activeLinkClassName);
       }
     });
   });
-}
-
-export function switchCurrentNavLink(event) {
-  const elClasses = event.target.classList;
-
-  if (elClasses.contains(linkClassName)) {
-    const currentLinkId = event.target.dataset.id;
-
-    navEls.forEach((navEl) => {
-      const navLinkEls = navEl.querySelectorAll(".nav-link");
-
-      navLinkEls.forEach((navLinkEl) => {
-        if (
-          navLinkEl.dataset.id === currentLinkId &&
-          !navLinkEl.classList.contains(activeLinkClassName)
-        ) {
-          navLinkEl.classList.add(activeLinkClassName);
-        }
-        if (
-          navLinkEl.dataset.id !== currentLinkId &&
-          navLinkEl.classList.contains(activeLinkClassName)
-        ) {
-          navLinkEl.classList.remove(activeLinkClassName);
-        }
-      });
-    });
-  }
 }

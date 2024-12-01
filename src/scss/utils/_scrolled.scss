@@ -1,0 +1,34 @@
+.scrolled {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 10px;
+    }
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    color: $secondary-background-color;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+
+    @media screen and (min-width: $tablet-width) {
+      border-radius: 10px;
+    }
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $accent-color;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $accent-color;
+  }
+}

@@ -62,7 +62,7 @@
     {
       "name": "Diva",
       "links": {
-        "livepage": "https://diva-mb.cz/",
+        "livepage": "https://diva-mb.cz",
         "code": "https://github.com/OleksandrPM/diva-mb"
       },
       "techstack": ["HTML", "SASS", "JS", "Parcel", "Google Drive"],

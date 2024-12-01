@@ -9,6 +9,9 @@ import { renderSkills } from "./skills";
 import { renderProjects } from "./projects";
 import { renderWork } from "./work";
 import { renderEducation } from "./education";
+import { renderFooter } from "./footer";
+import { renderPhoto } from "./photo";
+import { renderNavigation } from "./navigation";
 
 // Set document`s lang attribute
 document.documentElement.lang = currentLanguage;
@@ -17,6 +20,8 @@ document.documentElement.lang = currentLanguage;
 setCurrentOption(currentLanguage);
 
 buildPage(currentLanguage);
+renderFooter();
+renderPhoto();
 
 openLangPickerListener(buildPage);
 
@@ -27,4 +32,5 @@ export function buildPage(currentLanguage) {
   renderProjects(currentLanguage);
   renderWork(currentLanguage);
   renderEducation(currentLanguage);
+  renderNavigation(currentLanguage);
 }

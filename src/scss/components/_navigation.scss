@@ -1,8 +1,3 @@
-.nav {
-  overflow-y: auto;
-  // -webkit-overflow-scrolling: touch;
-}
-
 .nav-link {
   padding-top: calc(10px / $vw-mobile-coef);
   padding-bottom: calc(10px / $vw-mobile-coef);
@@ -18,10 +13,6 @@
     &:hover {
       color: $accent-color;
     }
-
-    // &:focus {
-    //   color: $accent-color;
-    // }
   }
 
   &.is-touched {

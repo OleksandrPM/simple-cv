@@ -8,8 +8,9 @@
     <title>Moskaliuk CV</title>
   </head>
   <body class="page">
+    {{>header}}
     <main>
-      {{>header}}{{>hero}}{{>projects}}{{>work}}{{>education}}
+      {{>hero}}{{>projects}}{{>work}}{{>education}}
       {{>tech-skills}}{{>soft-skills}}{{>languages}}{{>contacts}}
       <aside class="sidebar">
         {{>photo}}{{>contacts}}{{>tech-skills}}{{>soft-skills}}{{>languages}}
@@ -22,11 +23,8 @@
 
     <!-- Scripts -->
     <script type="module" src="/src/js/buildPage.js"></script>
-    <script type="module" src="/src/js/sectionsId.js"></script>
-    <script type="module" src="/src/js/footer.js"></script>
-    <script type="module" src="/src/js/photo.js"></script>
-    <script type="module" src="/src/js/touchElement.js"></script>
-    <script type="module" src="/src/js/mobileMenu.js"></script>
     <script type="module" src="/src/js/windowScroll.js"></script>
+    <script type="module" src="/src/js/mobileMenu.js"></script>
+    <script type="module" src="/src/js/touchElement.js"></script>
   </body>
 </html>

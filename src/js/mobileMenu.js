@@ -1,6 +1,6 @@
 import { enableBodyScroll, disableBodyScroll } from "body-scroll-lock";
 
-import { switchCurrentNavLink } from "./navigation";
+import { switchNavLinkByClick } from "./navigation";
 
 const mobMenuEl = document.querySelector(".mobile-menu");
 const mobMenuBtnEl = mobMenuEl.querySelector(".menu-button");
@@ -9,8 +9,7 @@ const mobMenuNavEl = mobMenuEl.querySelector(".nav");
 const openBtnTitle = "Close menu";
 const closeBtnTitle = "Open menu";
 
-mobMenuBtnEl.classList.add("mobile-menu_button");
-mobMenuNavEl.classList.add("mobile-menu_nav");
+mobMenuNavEl.classList.add("mobile-menu_nav", "scrolled");
 
 mobMenuBtnEl.addEventListener("click", handleButtonClick);
 
@@ -31,7 +30,7 @@ function handleButtonClick() {
 }
 
 function handleDocumentClick(event) {
-  switchCurrentNavLink(event);
+  switchNavLinkByClick(event.target);
 
   if (!mobMenuEl.contains(event.target) || event.target.tagName === "A") {
     mobMenuBtnEl.classList.toggle("open");

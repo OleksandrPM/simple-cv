@@ -5,7 +5,7 @@
 
   width: 80vw;
   max-height: 95vh;
-  padding: 15vw 5vw 5vw 5vw;
+  padding: 10vh 5vw 5vh 5vw;
 
   color: $reverse-text-color;
   background-color: rgba($color: $secondary-background-color, $alpha: 0.95);
@@ -21,10 +21,14 @@
   &.open {
     left: 20vw;
   }
-}
 
-.mobile-menu_button.menu-button {
-  position: fixed;
-  top: 5vw;
-  right: 5vw;
+  & .menu-button {
+    position: fixed;
+    top: 4vw;
+    right: 4vw;
+  }
+
+  & nav {
+    max-height: 80vh;
+  }
 }
